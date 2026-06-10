@@ -272,18 +272,6 @@ export default function DataDeletionRequestForm() {
           </ul>
         </div>
 
-        <div className="scaffold-card">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--color-secondary-text)]">
-            Expected API
-          </p>
-          <div className="mt-4 rounded-2xl bg-[var(--color-surface-soft)] p-4 text-sm text-[var(--color-text)]">
-            <p className="font-semibold">POST `/api/v1/users/me/data-deletion-request`</p>
-            <p className="mt-2 text-[var(--color-secondary-text)]">
-              Payload includes request type, categories, confirmation text, details, and retention acknowledgement.
-            </p>
-          </div>
-        </div>
-
         {result ? (
           <div className="scaffold-card">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--color-secondary-text)]">

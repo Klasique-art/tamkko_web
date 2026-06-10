@@ -185,19 +185,6 @@ export default function DeleteAccountForm() {
           </ul>
         </div>
 
-        <div className="scaffold-card">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--color-secondary-text)]">
-            Expected API
-          </p>
-          <div className="mt-4 rounded-2xl bg-[var(--color-surface-soft)] p-4 text-sm text-[var(--color-text)]">
-            <p className="font-semibold">POST `/api/v1/users/me/delete-request`</p>
-            <p className="mt-2 text-[var(--color-secondary-text)]">
-              Payload includes `confirmation_text`, `reason_code`, `reason_details`, and
-              `acknowledge_data_removal`.
-            </p>
-          </div>
-        </div>
-
         {result ? (
           <div className="scaffold-card">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--color-secondary-text)]">
