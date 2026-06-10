@@ -33,9 +33,9 @@ export default function HomePage() {
         <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--color-secondary-text)]">
           Privacy Requests
         </p>
-        <h3 className="mt-3 text-3xl text-[var(--color-text)]">Visit the request pages</h3>
+        <h3 className="mt-3 text-3xl text-[var(--color-text)]">Manage your privacy requests</h3>
         <p className="mt-3 max-w-3xl text-sm leading-7 text-[var(--color-secondary-text)]">
-          Use these pages when you want Tamkko to remove some of your data or schedule deletion of your full account.
+          Use these pages to request removal of selected data or to begin the process of deleting your Tamkko account.
         </p>
 
         <div className="mt-5 grid gap-4 md:grid-cols-2">
