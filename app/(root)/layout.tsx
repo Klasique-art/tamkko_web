@@ -1,4 +1,5 @@
 import Link from "next/link";
+import LegalNavbar from "./_legal/legal-navbar";
 
 export default function RootLayout({
   children,
@@ -15,14 +16,7 @@ export default function RootLayout({
             </span>
             <span className="text-2xl text-stone-900 sm:text-3xl">Tankko</span>
           </Link>
-          <nav className="scaffold-links">
-            <Link className="scaffold-link" href="/terms-and-conditions">
-              Terms &amp; Conditions
-            </Link>
-            <Link className="scaffold-link" href="/privacy-policy">
-              Privacy Policy
-            </Link>
-          </nav>
+          <LegalNavbar />
         </header>
 
         <main className="flex-1 py-8">{children}</main>

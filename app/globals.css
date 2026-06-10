@@ -59,6 +59,12 @@
     background: var(--primary);
   }
 
+  .scaffold-link-active {
+    @apply text-white;
+    background: var(--primary);
+    box-shadow: 0 12px 30px -18px rgba(87, 18, 23, 0.95);
+  }
+
   .scaffold-card {
     @apply rounded-[1.5rem] border p-6 sm:p-8;
     border-color: var(--border);
