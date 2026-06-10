@@ -25,6 +25,10 @@ export const legalHighlights: LegalHighlight[] = [
     label: "Legal scope",
     value: "These pages are intended to cover user conduct, billing behavior, content responsibilities, privacy handling, and operational safeguards across the app.",
   },
+  {
+    label: "Target age group",
+    value: "13-15, 16-17, 18 and over.",
+  },
 ];
 
 export const termsSections: LegalSection[] = [
@@ -34,7 +38,7 @@ export const termsSections: LegalSection[] = [
   },
   {
     title: "2. Eligibility and Account Registration",
-    body: "You must provide accurate registration information and keep your account details current. You are responsible for protecting your password, device access, recovery details, and any sessions connected to your account. Tamkko may require identity, age, ownership, payout, or security verification before enabling certain features, especially creator tools, wallet-related actions, or account recovery flows.",
+    body: "You must provide accurate registration information and keep your account details current. The target age group for Tamkko includes users ages 13-15, 16-17, and 18 and over, but access to some features may depend on age, local law, safety review, or monetization eligibility. You are responsible for protecting your password, device access, recovery details, and any sessions connected to your account. Tamkko may require identity, age, ownership, payout, or security verification before enabling certain features, especially creator tools, wallet-related actions, or account recovery flows.",
   },
   {
     title: "3. Acceptable Use and Community Conduct",
@@ -42,7 +46,7 @@ export const termsSections: LegalSection[] = [
   },
   {
     title: "4. Creator Content and Rights",
-    body: "Creators are responsible for the videos, images, captions, audio, room activity, descriptions, and other materials they publish through Tamkko. You must have the rights, licenses, permissions, and legal authority necessary to upload or monetize that content. Content that violates intellectual property rights, local law, platform safety standards, or payment-network rules may be removed, blocked, demonetized, or escalated for review.",
+    body: "Creators are responsible for the videos, images, captions, audio, room activity, descriptions, and other materials they publish through Tamkko. You must have the rights, licenses, permissions, and legal authority necessary to upload or monetize that content. Tamkko may permit the public sharing of nudity, but nudity is not the primary focus of the app and does not change the broader expectation that content must still comply with platform rules, applicable law, and payment-network standards. Content that violates intellectual property rights, local law, platform safety standards, or payment-network rules may be removed, blocked, demonetized, or escalated for review.",
   },
   {
     title: "5. Subscriptions, Tips, Wallets, and Payouts",
@@ -54,7 +58,7 @@ export const termsSections: LegalSection[] = [
   },
   {
     title: "7. Enforcement and Platform Safety",
-    body: "We may investigate reports, review content or account activity, and take action when we reasonably believe a user has violated platform rules, harmed other users, exploited monetization systems, or created legal or security risk. Enforcement actions may include warnings, content removal, room restrictions, feature limitations, monetization holds, account suspension, or permanent termination depending on severity and recurrence.",
+    body: "We may investigate reports, review content or account activity, and take action when we reasonably believe a user has violated platform rules, harmed other users, exploited monetization systems, or created legal or security risk. Tamkko does not permit the public sharing of real-world, graphic violence outside of a newsworthy context. Enforcement actions may include warnings, content removal, room restrictions, feature limitations, monetization holds, account suspension, or permanent termination depending on severity and recurrence.",
   },
   {
     title: "8. Availability, Changes, and Feature Evolution",
@@ -69,7 +73,7 @@ export const termsSections: LegalSection[] = [
 export const privacySections: LegalSection[] = [
   {
     title: "1. Data We Collect",
-    body: "Tamkko may collect account identifiers, profile details, creator information, login and session activity, device or browser details, content metadata, room participation signals, moderation reports, support history, subscription records, payment events, payout information, and related operational logs needed to provide and secure the service.",
+    body: "Tamkko may collect account identifiers, profile details, creator information, age-group information where needed for safety or eligibility, login and session activity, device or browser details, content metadata, room participation signals, moderation reports, support history, subscription records, payment events, payout information, and related operational logs needed to provide and secure the service. The app does not share a user's current and precise physical location with other users.",
   },
   {
     title: "2. Information Provided by Users and Creators",
