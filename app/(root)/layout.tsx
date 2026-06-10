@@ -14,7 +14,7 @@ export default function RootLayout({
             <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-[var(--color-primary)] text-lg font-bold text-white">
               T
             </span>
-            <span className="text-2xl text-stone-900 sm:text-3xl">Tankko</span>
+            <span className="text-2xl text-stone-900 sm:text-3xl">Tamkko</span>
           </Link>
           <LegalNavbar />
         </header>
