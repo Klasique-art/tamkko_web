@@ -9,26 +9,18 @@ export default function RootLayout({
     <div className="scaffold-shell">
       <div className="scaffold-frame">
         <header className="scaffold-nav">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-stone-500">
-              Fresh Start
-            </p>
-            <h1 className="mt-2 text-3xl text-stone-900 sm:text-4xl">
-              Tamkko Web Scaffold
-            </h1>
-          </div>
+          <Link href="/" className="inline-flex items-center gap-3">
+            <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-[var(--color-primary)] text-lg font-bold text-white">
+              T
+            </span>
+            <span className="text-2xl text-stone-900 sm:text-3xl">Tankko</span>
+          </Link>
           <nav className="scaffold-links">
-            <Link className="scaffold-link" href="/">
-              Home
-            </Link>
-            <Link className="scaffold-link" href="/dashboard">
-              Dashboard
-            </Link>
             <Link className="scaffold-link" href="/terms-and-conditions">
-              Terms
+              Terms &amp; Conditions
             </Link>
             <Link className="scaffold-link" href="/privacy-policy">
-              Privacy
+              Privacy Policy
             </Link>
           </nav>
         </header>
