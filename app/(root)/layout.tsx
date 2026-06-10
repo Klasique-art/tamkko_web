@@ -20,10 +20,6 @@ export default function RootLayout({
         </header>
 
         <main className="flex-1 py-8">{children}</main>
-
-        <footer className="border-t pt-5 text-sm text-stone-500" style={{ borderColor: "var(--border)" }}>
-          Clean scaffold routes are live. Old `types/` and `utils/` files have been removed.
-        </footer>
       </div>
     </div>
   );
