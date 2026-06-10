@@ -1,30 +1,23 @@
-import { Nunito, Rhodium_Libre, Metrophobic } from "next/font/google";
+import type { Metadata } from "next";
+import { Manrope, Newsreader } from "next/font/google";
 import "./globals.css";
 
-const nunito = Nunito({
-  variable: "--font-nunito",
+const manrope = Manrope({
+  variable: "--font-sans",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
-  display: 'swap',
-  preload: true,
+  display: "swap",
 });
 
-const rhodiumLibre = Rhodium_Libre({
-  variable: "--font-rhodium-libre",
+const newsreader = Newsreader({
+  variable: "--font-serif",
   subsets: ["latin"],
-  weight: ["400"],
-  display: 'swap',
-  preload: true,
+  display: "swap",
 });
 
-const metrophobic = Metrophobic({
-  variable: "--font-metrophobic",
-  subsets: ["latin"],
-  weight: ["400"],
-  display: 'swap',
-  preload: true,
-});
-
+export const metadata: Metadata = {
+  title: "Tamkko Web",
+  description: "Fresh Next.js scaffold for the Tamkko web project.",
+};
 
 export default function RootLayout({
   children,
@@ -32,11 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${nunito.variable} ${rhodiumLibre.variable} ${metrophobic.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className={`${manrope.variable} ${newsreader.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }
