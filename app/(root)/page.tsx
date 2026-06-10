@@ -17,16 +17,16 @@ export default function HomePage() {
         </div>
 
         <div className="scaffold-card">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-500">
-            Starter Notes
-          </p>
-          <ul className="mt-4 space-y-3 text-sm leading-6 text-stone-600">
-            <li>Home and dashboard routes are now placeholder pages.</li>
-            <li>Legal pages are available at `/terms-and-conditions` and `/privacy-policy`.</li>
-            <li>Layout uses a minimal shared shell for future expansion.</li>
-            <li>Folder structure remains in place for the next phase of work.</li>
-          </ul>
-        </div>
+        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-stone-500">
+          Starter Notes
+        </p>
+        <ul className="mt-4 space-y-3 text-sm leading-6 text-stone-600">
+          <li>The home and dashboard pages are currently limited while the full experience is being developed.</li>
+          <li>Legal pages are available at `/terms-and-conditions` and `/privacy-policy`.</li>
+          <li>The Tamkko web experience is still under construction, and more features will be added over time.</li>
+          <li>Some sections are currently simple placeholders while the full site is being built.</li>
+        </ul>
+      </div>
       </div>
 
       <div className="scaffold-card">
