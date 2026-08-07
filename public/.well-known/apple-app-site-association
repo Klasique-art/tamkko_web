@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "9RQK9PZD33.com.tamkko.app",
+        "paths": ["/post/*"]
+      }
+    ]
+  }
+}

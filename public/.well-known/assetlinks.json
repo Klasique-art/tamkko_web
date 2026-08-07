@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.tamkko.app",
+    "sha256_cert_fingerprints": [
+      "1C:BC:E4:5C:74:17:D4:A5:79:6C:EB:59:35:D6:A0:B2:83:CD:FB:66:FD:E6:F6:E6:BC:9F:E2:2B:F6:C0:AE:78"
+    ]
+  }
+}]
