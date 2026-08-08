@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { CheckCircle, ExternalLink, Play, AlertTriangle } from "lucide-react";
 import type { ShareData } from "@/lib/share-api";
@@ -44,15 +43,12 @@ export default function SharePage({ share }: SharePageProps) {
             <div className="scaffold-card">
               <div className="mb-4 flex items-center gap-3">
                 {share.creator.avatar_url ? (
-                  <div className="relative h-10 w-10 overflow-hidden rounded-full bg-stone-200">
-                    <Image
-                      src={share.creator.avatar_url}
-                      alt={share.creator.display_name}
-                      fill
-                      sizes="40px"
-                      className="object-cover"
-                    />
-                  </div>
+                  <img
+                    src={share.creator.avatar_url}
+                    alt={share.creator.display_name}
+                    className="h-10 w-10 rounded-full object-cover bg-stone-200"
+                    loading="lazy"
+                  />
                 ) : (
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--color-primary)] text-sm font-bold text-white">
                     {share.creator.display_name.charAt(0).toUpperCase()}
@@ -78,13 +74,11 @@ export default function SharePage({ share }: SharePageProps) {
 
               <div className="relative mb-4 overflow-hidden rounded-xl bg-stone-100">
                 <div className="relative aspect-square w-full">
-                  <Image
+                  <img
                     src={imageUrl}
                     alt={share.caption || `Post by ${share.creator.display_name}`}
-                    fill
-                    sizes="(max-width: 640px) 100vw, 512px"
-                    className="object-cover"
-                    priority
+                    className="h-full w-full object-cover"
+                    loading="eager"
                   />
                 </div>
                 {share.media_type === "video" && (
