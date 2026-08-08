@@ -17,7 +17,7 @@ interface SharePageProps {
 }
 
 function handleOpenInApp(postId: string) {
-  const customUrl = `${TAMKKO_CUSTOM_SCHEME}://post/${postId}`;
+  const customUrl = `${TAMKKO_CUSTOM_SCHEME}:///(tabs)?targetPostId=${postId}&feedFocusRequest=share`;
 
   window.location.href = customUrl;
 
