@@ -18,12 +18,23 @@ interface SharePageProps {
 
 function handleOpenInApp(postId: string) {
   const customUrl = `${TAMKKO_CUSTOM_SCHEME}://post/${postId}`;
-  const httpsUrl = `https://tamkko.com/post/${postId}`;
 
   window.location.href = customUrl;
 
   setTimeout(() => {
-    window.location.href = httpsUrl;
+    const ua = navigator.userAgent || navigator.vendor;
+    const isAndroid = /android/i.test(ua);
+    const isIOS = /iPad|iPhone|iPod/.test(ua);
+
+    if (isAndroid) {
+      window.location.href = GOOGLE_PLAY_URL;
+    } else if (isIOS) {
+      if (TESTFLIGHT_URL) {
+        window.location.href = TESTFLIGHT_URL;
+      } else if (APP_STORE_URL) {
+        window.location.href = APP_STORE_URL;
+      }
+    }
   }, 1500);
 }
 
