@@ -1,5 +1,7 @@
 export const TAMKKO_FALLBACK_IMAGE = "https://tamkko.com/og-image.png";
 
+export const TAMKKO_CUSTOM_SCHEME = "tamkko";
+
 export const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.tamkko.app";
 
 export const TESTFLIGHT_URL = null;

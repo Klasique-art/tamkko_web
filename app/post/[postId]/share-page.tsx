@@ -5,6 +5,7 @@ import { CheckCircle, ExternalLink, Play, AlertTriangle } from "lucide-react";
 import type { ShareData } from "@/lib/share-api";
 import {
   TAMKKO_FALLBACK_IMAGE,
+  TAMKKO_CUSTOM_SCHEME,
   GOOGLE_PLAY_URL,
   TESTFLIGHT_URL,
   APP_STORE_URL,
@@ -15,8 +16,18 @@ interface SharePageProps {
   share: ShareData;
 }
 
+function handleOpenInApp(postId: string) {
+  const customUrl = `${TAMKKO_CUSTOM_SCHEME}://post/${postId}`;
+  const httpsUrl = `https://tamkko.com/post/${postId}`;
+
+  window.location.href = customUrl;
+
+  setTimeout(() => {
+    window.location.href = httpsUrl;
+  }, 1500);
+}
+
 export default function SharePage({ share }: SharePageProps) {
-  const deepLinkUrl = `https://tamkko.com/post/${share.id}`;
   const imageUrl = share.preview_image_url || TAMKKO_FALLBACK_IMAGE;
 
   return (
@@ -99,13 +110,13 @@ export default function SharePage({ share }: SharePageProps) {
                 </p>
               )}
 
-              <a
-                href={deepLinkUrl}
+              <button
+                onClick={() => handleOpenInApp(share.id)}
                 className="mb-4 flex w-full items-center justify-center gap-2 rounded-full bg-[var(--color-primary)] px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[var(--color-accent-strong)]"
               >
                 <ExternalLink className="h-4 w-4" />
                 Open in Tamkko
-              </a>
+              </button>
 
               <div className="space-y-3">
                 <p className="text-center text-xs text-stone-500">
