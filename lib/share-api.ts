@@ -1,4 +1,4 @@
-const TAMKKO_API_BASE = "https://api.tamkko.com";
+const TAMKKO_API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL?.replace(/\/$/, "") ?? "https://tamkko-api.onrender.com";
 
 export interface ShareCreator {
   username: string;
